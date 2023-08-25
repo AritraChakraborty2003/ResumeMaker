@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+body{
+    background-color: var(--darkGreen);
+}
+:root{
+    --darkGreen:rgb(7, 62, 44);
+    --Black:black;
+    --darkYellow:goldenrod;
+}
+.bodyHolder{
+    height: max-content;
+    
+   
+}
+
+.navBar{
+    height: 10vmin;
+  
+    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.55fr 0.1fr 0.35fr;
+}
+.logoHolder{
+    height: 10vmin;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.25fr 0.7fr 0.05fr;
+}
+
+
+.resumeIcon{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.brandLogoTextDiv{
+    display: flex;
+    height: 10vmin;
+    justify-content:flex-start;
+    align-items: center;
+}
+@media(max-width:1080px){
+    .brandLogoText{
+        margin-left: 2vmin;
+        color: var(--darkYellow);
+        font-size: 3.5vmin;
+        font-family: "Roboto",sans-serif;
+    }
+    .iconHolder{
+        display: flex;
+        justify-content: center;
+        width: 10vmin;
+        height: 8vmin;
+        margin-top: 1vmin;
+        margin-left: 1vmin;
+        
+    }
+    .backIconholder {
+        height: 10vmin;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 8vmin;
+    }
+    .signUpBanner {
+        height: max-content;
+        margin-top: 50vmin;
+        padding-bottom: 7vmin;
+        background-color: azure;
+        width: 90vmin;border: 1px solid white;
+        border-radius: 3.75vmin;
+    }
+}
+@media(min-width:1080px){
+.brandLogoText{
+    color: var(--darkYellow);
+    font-size: 4.5vmin;
+    font-family: "Roboto",sans-serif;
+}
+.iconHolder{
+    display: flex;
+    justify-content: center;
+    width: 10vmin;
+    height: 8vmin;
+    margin-top: 1vmin;
+    margin-left: 10vmin;
+    
+}
+.backIconholder {
+    height: 10vmin;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8vmin;
+}
+.signUpBanner {
+    height: max-content;
+    padding-bottom: 3vmin;
+    margin-top: 10vmin;
+
+    background-color: azure;
+    width: 90vmin;border: 1px solid white;
+    border-radius: 3.75vmin;
+}
+}
+
+
+
+.backOptHolder {
+    height: 10vmin;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.5fr 0.5fr 0.90fr;
+}
+
+.backIcon{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.mainBanner{
+    display: flex;
+    justify-content: center;
+    
+   
+    height: calc(100vh - 10vmin);
+  
+}
+
+.headingSignUp{
+      display: flex;
+      justify-content: center;
+}
+.headingSignUpText{
+    font-size: 4vmin;
+    color: rgb(230, 166, 4);
+    font-weight: bold;
+   
+}
+.formElement{
+    width: 95%;
+    margin-left: 2vmin;
+    padding: 1vmin;
+    border: 1px solid grey;
+    margin-top: 7vmin;
+}

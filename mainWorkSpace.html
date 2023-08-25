@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mainWorkSpace.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito+Sans:opsz@6..12&family=Open+Sans:ital,wght@1,500&family=Quicksand:wght@500&family=Roboto+Mono:ital@1&family=Roboto:wght@300;500&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="workArea" >
+        <div class="welcomeTextDiv">
+          <p class="welcomeText" id="welcomeText">Welcome <span style="color: goldenrod;">Aritra</span></p>
+          <p class="additionalText" id="AdditionalSupportText" style="display: flex;justify-content: center;color: goldenrod; font-size: 20px;">(Please Fill all the entries and scroll till end and move to next!!!)</p>
+        </div>
+        <div class="navOptDiv">
+            <ul class="navCont" style="display: flex; justify-content: center; margin-top: 25px;">
+                <div class="navOpt"></div>
+                <div class="navOpt"></div>
+                <div class="navOpt"></div>
+                <div class="navOpt"></div>
+                
+            </ul>
+         </div>
+
+        <div class="entryBox">
+            <div class="personalDetails pgClass"  id="pd">
+             <div class="detailsHeaderDiv">
+                <p class="detailHeaderText" style="font-size: 27px; color: white; margin-left: 5px; margin-top: 5px;">Personal Details</p>
+             </div>
+             <div class="class" style="margin-left: 7px;">
+                 <div class="underLine" style="width: 170px;height:0.75vmin; margin-top: 0.5vmin; background-color: white;">
+                 </div> 
+             </div>
+
+             <div class="PDStructure">
+
+                     <p class="NamePDHeader PDHeader">Name:</p>
+                     <input type="text" name="PDName" id="PDName" class="PDElement" placeholder="Enter Name...">
+
+                     <p class="EmailPDHeader PDHeader">Mobile:</p>
+                     <input type="tel" name="mobile" id="PDMobile" class="PDElement" placeholder="Enter Mobile...">
+
+                     <p class="EmailPDHeader PDHeader">Email:</p>
+                     <input type="email" name="PDEmail" id="PDEmail" class="PDElement" placeholder="Enter Email...">
+
+                     <p class="LocationPDHeader PDHeader">Location:</p>
+                     <input type="text" name="PDLocation" id="PDLocation" class="PDElement" placeholder="Enter Location...">
+
+                     <div class="SocialLinks">
+                         <div class="SlHeader">
+                            <p class="SlHeaderText">Social Links</p>
+                            <div class="class" style="margin-left: 7px;">
+                             <div class="underLine" style="width: 130px;height:0.75vmin; margin-top: 0.5vmin; background-color: white;">
+                             </div> 
+                             </div>
+                            <p class="SlHeaderText" id="AddLinksPD" style="text-align: right; padding-right:15px;">+ Add Links</p>
+                         </div>
+                         <div class="SLPDStructure" id="SLPDStructure">
+                             <input type="text" class="PDLinkName" id="pdLN0"name="PDLinkName" placeholder="Link Name...">
+                             <input type="text" class="PDLinkElement" id="pdLE0" name="PDLinkName" placeholder="Link...">
+                         </div> 
+                     </div>
+
+                     <div class="AboutEntry">
+                        <div class="AbtHeader">
+                           <p class="AbtHeaderText">About</p>
+                           
+                           <div class="class" style="margin-left: 7px;">
+                            <div class="underLine" style="width: 85px;height:0.75vmin; margin-top: 0.5vmin; background-color: white;">
+                            </div> 
+                            </div>
+                            <p class="AdditionalHeaderText" style="margin-top: 10px;">(Fill a maximum of 30 words and minimum 25 words)</p>
+                        </div>
+                        <div class="AboutEntryStructure" id="AboutStructure">
+                            <textarea  id="abtTxtInput" class="abtTxtInput" cols="90" rows="10" placeholder="Enter About Text..." style="margin-top: 10px; margin-left: 15px; padding: 10px; font-size: 15px;"></textarea>
+                        </div> 
+                    </div>
+                    
+             </div>
+          
+        </div>
+
+        <div class="skillsEducation pgClass"  id="SklEdu" >
+               <div class="skillSection">
+                  <div class="skillHeader">
+                      <div class="skillHeadingText">
+                        <p style="color:white;font-size:35px;padding-left: 15px;">Skills</p>
+                        <div class="underline" style="background-color: white; width: 80px; height: 5px;margin-left: 15px;"></div>
+                       
+                        <p style="color: white; font-size: 20px; margin-left: 15px; margin-top: 5px;">(Add upto 20 advanced Skills and minimum 7)</p>
+                        <p style="color: white;font-size: 25px;text-align: right; padding-right: 10px;" id="AddSkills" onclick="skillAddHtml()">+ Add Skills</p>
+                    </div>
+                  </div>
+                  <div class="skillsContainer" id="skillsContainer">
+                     <div class="skillBoxHolder" id="skillBoxHolder">
+                      <input type="text" name="skill0" id="skill0" class="skillsBox3" placeholder="Enter Skill...">
+        
+                     </div>
+                    </div>
+               </div>
+               <div class="EduFamSection">
+                        <div class="FamiliarSkills">
+                             <div class="FMSContainer">
+                                <div class="FMHeader">
+                                    <p class="HeadingTextFms" style="color: white; font-size: 27px; margin-top: 35px;margin-left: 15px;">Familiar Skills</p>
+                                    <div class="underline" style="background-color: white; width: 160px; height: 5px;margin-left: 15px;"></div>
+                       
+                                     <p style="color: white; font-size: 20px; margin-left: 15px; margin-top: 15px;">(Add upto 6 Familiar Skills and minimum 3)</p>
+                                     <p style="color: white;font-size: 25px;text-align: right; padding-right: 25px;" id="FAddSkills">+ Add Skills</p>
+                                </div>
+                             </div>
+                             <div class="skillsContainer" id="skillsContainer1">
+                                <div class="skillBoxHolder1"   id="skillBoxHolder1" style="margin-top: 25px;">
+                                 <input type="text" name="Fskill0" id="Fskill0" class="skillsBox skillsBox1" placeholder="Enter Skill...">
+                               
+                                
+                                </div>
+                               </div>
+                            
+                            </div>
+                        <div class="Education">
+
+                            <div class="EducationContainer">
+                                <div class="EducationHeader" style="margin-top: 25px;">
+                                    <p class="EduHeadingText" style="font-size: 25px; color: white;">Education  (In Reverse Chronological Order)</p>
+                                    <div class="underline" style="background-color: white; width:120px; height: 5px;"></div>
+                                </div>
+                                <div class="EducationBody" style="margin-top: 15px;">
+                                    <p style="font-size:20px; color:white; padding-bottom:10px;">Education 1</p>
+                                    <div class="detailsHolder">
+                                        <input type="text" class="degEntry" name="degNameEntry" id="degName1" placeholder="Enter course Details...">
+                                        <input type="number" class="degEntry" name="startYear1" id="startYear1" placeholder="Enter start year...">
+                                        <input type="number" class="degEntry" name="endYear1" id="endYear1" placeholder="Enter end year...">
+                                    </div>
+
+                                    <div class="InstituteNameHolder">
+                                        <input type="text" class="degEntry" name="InstNameEntry" id="InstName1" placeholder="Enter Institute name..." style="width: 80%;">
+                                    </div>    
+
+                                    <div class="gradesHolder">
+                                        <input type="text" class="degEntry" name="GrdEntry" id="GrdEntry1" placeholder="Enter Grades ...">
+                                    </div>  
+                                </div>
+
+
+                                <div class="EducationBody" style="margin-top: 15px;">
+                                    <p style="font-size:20px; color:white; padding-bottom:10px;">Education 2</p>
+                                    <div class="detailsHolder">
+                                        <input type="text" class="degEntry" name="degNameEntry" id="degName2" placeholder="Enter Course Details...">
+                                        <input type="number" class="degEntry" name="startYear1" id="startYear2" placeholder="Enter start year...">
+                                        <input type="number" class="degEntry" name="endYear1" id="endYear2" placeholder="Enter end year...">
+                                    </div>
+
+                                    <div class="InstituteNameHolder">
+                                        <input type="text" class="degEntry" name="InstNameEntry" id="InstName2" placeholder="Enter institute name..." style="width:80%">
+                                    </div>    
+
+                                    <div class="gradesHolder">
+                                        <input type="text" class="degEntry" name="GrdEntry" id="GrdEntry2" placeholder="Enter Grades ...">
+                                    </div>  
+                                </div>
+                                <div class="EducationBody" style="margin-top: 15px;">
+                                    <p style="font-size:20px; color:white; padding-bottom:10px;">Education 3</p>
+                                    <div class="detailsHolder">
+                                        <input type="text" class="degEntry" name="degNameEntry" id="degName3" placeholder="Enter course and branch...">
+                                        <input type="number" class="degEntry" name="startYear1" id="startYear3" placeholder="Enter start year...">
+                                        <input type="number" class="degEntry" name="endYear1" id="endYear3" placeholder="Enter end year...">
+                                    </div>
+
+                                    <div class="InstituteNameHolder">
+                                        <input type="text" class="degEntry" name="InstNameEntry" id="InstName3" placeholder="Enter Institute name..." style="width: 80%;">
+                                    </div>    
+
+                                    <div class="gradesHolder">
+                                        <input type="text" class="degEntry" name="GrdEntry" id="GrdEntry3" placeholder="Enter Grades ...">
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+              </div>
+                
+        </div>
+    
+
+        <div class="Projects pgClass"  id="Prj">
+            <div class="ProjectHeaderTextDiv" style="margin-top: 50px;">
+                <p class="ProjectheadingText" style="color: white; font-size: 40px; margin-left: 15px; margin-top: 30px;">Projects</p>
+                <div class="underLine" style="background-color: white; width: 150px; height: 10px; margin-left:15px"></div>
+                <p style="color: white;font-size: 27px;text-align: right; padding-right: 10px;" id="ProjectAdd" onclick="expandProjects()" >+ Add Projects</p>
+                <p class="ProjectheadingText" style="color: white; font-size: 20px; margin-left: 15px; margin-top: 10px;">(Note:- Enter Technologies used in tech stach by | seperator within 7 words and Its Mandatory to Add 3 Skills)</p>
+            </div>
+
+            <div class="ProjectContainer">
+                 <div class="projectNameLinks" >
+                    <p class="innerHeader" style="margin-top: 10px; color: white; font-size: 27px; margin-left: 7px; padding-bottom: 25px;">Project 1</p>
+                    <input type="text" class="InpPrj1" id="namPrj0" placeholder="Enter Project Name" style="font-size: 20px;  width:50%; padding: 7px; border: 3px solid grey;">
+                    <input type="text" class="InpPrj1" id="LiveLnkPrj0" placeholder="Enter Live Link..." style="font-size: 20px;  width:20%; padding: 7px; border: 3px solid grey;">
+                    <input type="text" class="InpPrj1" id="GitLnkPrj0" placeholder="Enter Github Link..." style="font-size: 20px;  width:20%; padding: 7px; border: 3px solid grey;">
+                 </div>
+
+                 <div class="projectDescr" style="margin-left: 20px; margin-top: 20px;">
+                    <textarea rows="5" cols="50" id="PrjDescr0" class="InpPrj1" style="font-size: 19px;padding: 7px;" placeholder="Enter Project Description(Note - Within 30 words mandatory)"></textarea>
+                 </div>
+
+                 <div class="techStack"  style="margin-left: 20px; margin-top: 20px;">
+
+                    <input type="text" class="InpPrj1" id="techStk0" style="width: 50%;font-size: 20px;padding: 7px;" placeholder="Enter Tech stack...">
+
+                 </div>
+            </div>
+        </div>
+
+
+        <div class="AchievementsCert pgClass"  id="AchCert">
+            <div class="AchievementClass">
+                <p style="color: white;font-size: 35px;padding-left: 15px; margin-top: 30px;">Achievements</p>
+                <div class="underLine" style="width: 215px; background-color: white; margin-left: 15px; height: 5px;"></div>
+                <p style="color: white; font-size: 25px; text-align: right; padding-right: 20px; margin-top: 10px;" id="AddAch" onclick="addAchievements()">+ Add Achievements</p>
+                <p style="color:white;margin-left:15px;font-size: 20px; margin-top: 20px;">(Add a maximum of top 4 achievements)</p>
+            </div>
+            <ul class="achievementContainer" id="acheievementContainer" style="margin-top: 15px;">
+                <input type="text" class="AcheivementName" id="Achieve0" style="font-size: 17px ;width: 80%;border: 3px solid grey;padding: 7px; margin-left: 15px; margin-top: 15px;" placeholder="Enter Achievements Details...">
+            </ul>
+
+
+            <p style="color: white;font-size: 25px;padding-left: 15px; margin-top: 20px;">(Please Update these entries first)</p>
+
+            <div class="CertificateClass">
+                <p style="color: white;font-size: 35px;padding-left: 15px; margin-top: 30px;">Trainings</p>
+                <div class="underLine" style="width: 215px; background-color: white; margin-left: 15px; height: 5px;"></div>
+                <p style="color: white; font-size: 25px; text-align: right; padding-right: 20px;" id="AddTrn" onclick="addProject()">+ Add Trainings</p>
+                <p style="color:white;margin-left:15px;font-size: 20px; margin-top: 20px;">(Add a maximum of  10 Trainings)</p>
+            </div>
+            <ul class="certificateContainer" id="certificateContainer" style="margin-top: 15px;">
+                <input type="text" class="TrainingNameClass" id="TrainN0" style="font-size: 17px ;width: 70%;border: 3px solid grey;padding: 7px; margin-left: 15px; margin-top: 10px;" placeholder="Enter Training Name...">
+                <input type="text" class="TrainingNameClass" id="TrainI0" style="font-size: 17px ;width: 20%;border: 3px solid grey;padding: 7px; margin-left: 15px; margin-top: 10px;" placeholder="Institute Name...">
+            </ul>
+
+
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 25px;">
+        <p style="padding-bottom: 10px; font-size: 24px; color: white;">(Please press the update button to update entries)</p>
+       </div>
+        <div class="btnHolder" style="padding-bottom: 70px;">
+        <button id="prevBtn" class="btn">Previous</button>
+        <button id="update" class="btn">Update</button>
+        <button id="getPdf" class="btn" onclick="window.location.href='#resumeManager'">Preview</button>
+        <button id="nextBtn" class="btn" >Next</button>
+       </div>
+     </div>
+                                       
+ <div class="resumeManager border" id="resumeManager" style="display: flex; justify-content: center;">
+    <div class="resumeContainer border" id="resumeContainer" style="height: 1120px;">
+        <div class="resumeBody">
+            <div class="ResumeHeader">
+                <div class="ResumeName">
+                  <p id="ResumeNameText" class="ResumeNameText">ARITRA CHAKRABORTY</p>
+                </div>
+                <div class="LocationName">
+                    <p id="LocNameText" class="LocNameText">Greater Noida,UP</p>
+                  </div>
+                  <div class="contSection ">
+                    <ul class="contHeaderDiv">
+                        <li class="mobile" id="mobileEntry">7585824862<span class="line" style="margin-left: 1vmin; font-weight: bold;" >|</span> </li>
+                        <li class="mail" id="emailEntry">&nbsp;aritra.chakraborty203@gmail.com<span class="line" style="margin-left: 1vmin; font-weight: bold;" >|</span> </li>
+                        <li class="Linkedin" id="LinkedinEntry"><a href="#" target="_blank" style="text-decoration: none; color: black;">&nbsp;Linkedin<span class="line" style="margin-left: 1vmin; font-weight: bold;" >|</span> </a></li>
+                        <li class="Github" id="GithubEntry"><a href="#" target="_blank" style="text-decoration: none; color: black;">&nbsp;Github<span class="line" style="margin-left: 1vmin; font-weight: bold;" >|</span></a></li>
+                        <li class="Github" id="PortfolioEntry"><a href="#" target="_blank" style="text-decoration: none; color: black;">&nbsp;Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="underLineContainer">
+                <div class="underLine"></div>
+            </div>
+            <div class="mainBody">
+                <div class="leftPart">
+                    <div class="eduDiv">
+                        <div class="eduHeader">
+                            <p class="eduHeaderText" style="font-size:25px; margin-left: 15px; margin-top: 10px;">Education</p>
+                        <div class="headerEduUnderLineDiv" style="padding-left:7px;">
+                            <div class="headerEduUnderLine" style="width:110px;height: 3.75px; background-color: black;margin-left: 10px; "></div>
+                        </div>
+                       </div>
+                       <div class="eduContainer">
+                            <div class="ugDiv">
+                                <div class="eduInnerHeader">
+                                    <div class="degDetails" style="display: flex; justify-content: space-between;">
+                                            <p class="degName" id="degNameUg" style="padding:3px;"><b>B.Tech CSE(AI)</b></p>
+                                            <p class="degDate" id="degNameDateUg" style="padding:3px; padding-right: 10px;">(2022-2026)</p>
+                                    </div>
+                                    <div class="instName">
+                                        <p class="degNameInst" id="degNameInstUg" style="padding:3px;">IIMT College of Engineering</p>
+                                    </div>
+                                    <div class="gradeDiv">
+                                        <p class="degNameGrade" id="degNameGradeUg" style="padding:3px;"><b>Grade: 8.55</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inter">
+                                <div class="eduInnerHeader">
+                                    <div class="degDetails">
+                                        <div class="degDetails" style="display: flex; justify-content: space-between;">
+                                            <p class="degName" id="degNameInter" style="padding:3px;"><b>Class XII</b></p>
+                                            <p class="degDate" id="degNameDateInter" style="padding:3px;padding-right: 10px;">(2021-2022)</p>
+                                    </div>
+                                    </div>
+                                    <div class="instName">
+                                        <p class="degNameInst" id="degNameInstInter" style="padding:3px;">St. Joseph's Convent High School</p>
+                                    </div>
+                                    <div class="gradeDiv">
+                                        <p class="degNameGrade" id="degNameGradeInter" style="padding:3px;"><b>Grade: 86.6%</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="matric">
+                                <div class="eduInnerHeader">
+                                    <div class="degDetails ">
+                                        <div class="degDetails" style="display: flex; justify-content: space-between;">
+                                            <p class="degName" id="degNameMatric" style="padding:3px;"><b>Class X</b></p>
+                                            <p class="degDate" id="degNameDateMatric" style="padding:3px;padding-right: 10px;">(2019-2020)</p>
+                                    </div>
+                                    </div>
+                                    <div class="instName">
+                                        <p class="degNameInst" id="degNameInstMatric" style="padding:3px;">St. Joseph's Convent High School</p>
+                                    </div>
+                                    <div class="gradeDiv">
+                                        <p class="degNameGrade" id="degNameGradeMatric" style="padding:3px;"><b>Grade: 91%</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="skillsDiv">
+                        <div class="SkillsHeaderEntry" >
+                        <p class="headerSkill"  style="font-size:25px; margin-left: 10px;">Skills</p>
+                        <div class="headerEduUnderLineDiv" style="padding-left:3px;">
+                            <div class="headerEduUnderLine" style="width:60px;height: 3.75px; background-color: black;margin-left: 6px; "></div>
+                        </div>
+                        </div>
+
+
+                            <div class="advanceSkillsDiv"id="advanceSkillsDiv" > 
+                               <div class="sklGrp" style="padding-left: 7px;">HTML5 , CSS3 , JavaScript , React.js </div>
+                               <div class="sklGrp" style="padding-left: 7px;">Angular.js , Chart.js , vue.js , Three.js ,</div>
+                               <div class="sklGrp" style="padding-left: 7px;">Tailwind , Ajax , Jquery , DSA ,</div>
+                               <div class="sklGrp" style="padding-left: 7px;">APIs , Git/Github , SAAS/LESS , Java</div>
+                               <div class="sklGrp" style="padding-left: 7px;">C/C++ , Python , Bootstrap , PHP</div>
+                             
+                          </div>
+                            <div class="familiarSkillsDiv">
+                                 <div class="famSklGrp">
+                                    <p style="margin-left: 7px;"><b>Familiar Skills:</b></p>
+                                 </div>
+                                 <div class="famSklGrp1" style="margin-left: 7px;">Node.js , Express.js , MySQL , Django </div>
+                                 <div class="famSklGrp1" style="margin-left: 7px;">Android Dev , IOT</div>
+
+                            </div>
+                       
+                    </div>
+                    
+                    <div class="certificateDiv">
+                            <div class="certificateHeader">
+                                <div class="eduHeader">
+                                    <p class="eduHeaderText" style="font-size:25px; margin-left: 10px; margin-top: 10px;">Trainings</p>
+                                    <div class="headerEduUnderLineDiv" style="padding-left:3px; margin-top: 3px;">
+                                        <div class="headerEduUnderLine" style="width:100px;height: 3.75px; background-color: black;margin-left: 10px; "></div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="certificateContainer">
+                                    <ul class="containerBoxCert" id="containerBoxCert">
+                                        <li class="certificateText">Frontend Dev Course - Coding Ninjas</li>
+                                        <li class="certificateText">JavaScript Course - Geeks For Geeks</li>
+                                        <li class="certificateText">React.js Certification - Croma Campus</li>
+                                        <li class="certificateText">Angular.js Training - Coding Blocks</li>
+                                        <li class="certificateText">UI/UX Bootcamp - Udemy</li>
+                                        <li class="certificateText">Django Course - Learn Code Online</li>
+                                        <li class="certificateText">Web development Course - Internshala</li>
+                                        <li class="certificateText">MERN Stack course - Udemy</li>
+                                        <li class="certificateText">Android development - Internshala</li>
+                                        <li class="certificateText">DSA Course - GeekForGeeks</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                          
+
+                    </div>
+                
+                <div class="rightPart borderBlack">
+                    <div class="aboutDiv">
+                        <div class="aboutHeaderDiv">
+                            <p class="aboutHeaderDivText">About</p>
+                            <div class="underLineContainerAbout">
+                                <div class="underLineAbt"></div>
+                            </div>
+                        </div>
+                        <div class="aboutDivText">
+                            <p class="aboutDivTex" id="aboutTextEntry">Frontend Developer specializing in React.js and JavaScript. Leveraging advanced programming skills to tackle complex issues and create seamless user experiences. Passionate about innovative frontend solutions that bridge design and functionality.</p>
+                        </div>
+                    </div>
+                    <div class="projectsDiv">
+                        <div class="projectsDivHeader">
+                            <div class="eduHeader">
+                                <p class="eduHeaderText" style="font-size:25px; margin-left: 10px; margin-top: 10px;">Projects</p>
+                                <div class="headerEduUnderLineDiv" style="padding-left:3px; margin-top: 3px;">
+                                    <div class="headerEduUnderLine" style="width:100px;height: 3.75px; background-color: black;margin-left: 10px; ">
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+
+                        <div class="projectsContainer">
+                                    <div class="project1 projectClass ">
+                                        <div class="headerP1 headerClass">
+                                            <p class="ProjectName ProjectNameClass" id="P0NameLink">Quizer's World...&nbsp;[<a href="#"class="linkStyle" target="_blank">Live Link</a>&nbsp;|&nbsp;<a href="#" class="linkStyle" target="_blank">Github Link</a>]</p>
+                                          </div>
+                                        <div class="descrP1 DescrClassPrj">
+                                            <p class="descrClassProjText" id="P0Descr">A quiz web app using HTML, CSS, and JS, backed by Django. Utilize browser storage for data persistence, showcasing results via a leaderboard and charts for analysis from mysql Database.</p>
+                                        </div>
+                                        <div class="TechStackP1 StackClassDiv" style="padding-left: 5px;">
+                                            <p class="StackClassProjText" id="P0TechStack"><b>Tech Stack:</b> HTML | CSS | JS | Ajax | Jquery | Chart.js | Django </p>
+                                        </div>
+                                    </diV>
+                                    <div class="project2 projectClass">
+                                        <div class="headerP2 headerClass">
+                                            <p class="ProjectName ProjectNameClass" id="P1NameLink">Affluence Mart...&nbsp;[<a href="#"class="linkStyle" target="_blank">Live Link</a>&nbsp;|&nbsp;<a href="#" class="linkStyle" target="_blank">Github Link</a>]</p>
+                                        </div>
+                                        <div class="descrP2 DescrClassPrj">
+                                            <p class="descrClassProjText" id="P1Descr"> 
+                                                
+                                                A cutting-edge ecommerce app built on React.js and Django, featuring an intricate product database, streamlined checkout, advanced functionalities, and secure payment gateway integration for seamless online shopping.</p>
+                                        </div>
+                                        <div class="TechStackP2" style="padding-left: 5px;">
+                                            <p class="StackClassProjText" id="P1TechStack"><b>Tech Stack:</b> HTML | CSS | JS | React.JS | Django | Mysql </p>
+                                        </div>
+                                    </div>
+                                    <div class="project3 projectClass">
+                                        <div class="headerP3 headerClass">
+                                            <p class="ProjectName ProjectNameClass" id="P2NameLink">Astral Forecast...&nbsp;[<a href="#"class="linkStyle" target="_blank">Live Link</a>&nbsp;|&nbsp;<a href="#" class="linkStyle" target="_blank">Github Link</a>]</p>
+                                        </div>
+                                        <div class="descrP3  DescrClassPrj">
+                                            <p class="descrClassProjText" id="P2Descr"> 
+                                                
+                                                   Crafted a dynamic weather app using React.js and OpenWeather API. Seamlessly displays real-time weather data, offering intuitive user interactions and visually engaging forecasts.
+                                               </p>
+                                        </div>
+                                       
+                                        <div class="TechStackP3 StackClassDiv" style="padding-left: 5px;">
+                                            <p class="StackClassProjText" id="P2TechStack"><b>Tech Stack:</b> HTML | CSS | JS | Angular.js | RESTful APIs</p>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="AchievementsDiv">
+                        <div class="achievementsHeader ">
+                            <p class="AchHeader" style="margin-top: 1px; font-size: 23px; margin-left: 5px;">Achievements</p>
+                            <div class="headerEduUnderLineDiv" style="padding-left:3px; margin-top: 3px;">
+                                <div class="headerEduUnderLine" style="width:150px;height: 3.75px; background-color: black;margin-left: 5px; "></div>
+                            </div>
+                            </div>
+
+                            <div class="acheievementContainer">
+                                  <ul class="AchivementContainer" id="achievementContainer">
+                                    <li class="AchievementText"><b>Code Euler</b>-<b>1st</b> Position (Inter-College Coding contest)</li>
+                                    <li class="AchievementText"><b>Hack-BVP 5.0</b>-<b>1st</b> Position (Team Name -Coding Squad)</li>
+                                    <li class="AchievementText"><b>Hack-Mait 3.0</b>-<b>2nd</b> Position (Team Name -IOT Avengers)</li>
+                                    <li class="AchievementText">Among <b>top 10</b> coders on <b>GFG platform</b> from our College</li>
+                                  </ul>
+                            </div>
+                        </div>
+                        
+
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <script type="text/javascript" src="mainWorkSpace.js"></script>
+   
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js" integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>

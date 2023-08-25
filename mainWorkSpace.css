@@ -1,0 +1,364 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Varela Round', sans-serif;
+
+}
+.btn{
+    margin-left: 20px;
+    font-size: 25px;
+    background-color: rgb(137, 101, 12);
+    color: white;
+    padding: 9px;
+    
+}
+.btnHolder{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+:root{
+
+--darkGreen:rgb(7, 62, 44);
+--Black:black;
+}
+
+.resumeContainer{
+ 
+    width: 900px;
+   
+
+
+}
+.ResumeNameText{
+    text-align: center;
+    font-size: 45px;
+}
+.LocNameText{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.contHeaderDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.contHeaderDiv li{
+    list-style: none;
+    font-size: 20px;
+}
+.workArea{
+   background-color: var(--darkGreen);
+   border: 1px solid white;
+ 
+ 
+}
+
+.welcomeText{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 13px;
+    color: white;
+}
+.entryBox{
+    margin-top: 25px;
+    padding-bottom: 25px;
+  
+   
+}
+.PDHeader{
+    margin-left: 10px;
+    color: white;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.PDElement{
+    margin-left: 10px;
+    width: 80%;
+    padding: 5px;
+    margin-top: 7px;
+    font-size: 17px;
+    border: 3px solid grey;
+    border-radius: 5px;
+}
+.SocialLinks{
+    margin-top: 25px;
+}
+.SlHeaderText{
+    font-size: 25px;
+    color: white;
+    padding-left: 7px;
+}
+.AbtHeaderText{
+    font-size: 25px;
+    color: white;
+    padding-left: 7px;
+    margin-top: 50px;
+}
+.AdditionalHeaderText{
+    color: white;
+    font-size: 20px;
+    padding-left: 7px;
+}
+.PDLinkName{
+    width: 150px;
+    font-size: 18px;
+    padding:7px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 3px solid grey;
+    border-radius: 3px;
+}
+.PDLinkElement{
+    width: 85%;
+    font-size: 18px;
+    padding:7px;
+     margin-top: 10px;
+    margin-left: 10px;
+    border: 3px solid grey;
+    border-radius: 3px;
+}
+.SLPDStructure{
+    margin-top: 15px;
+}
+.AboutDivPD{
+    margin-left: 7px;
+}
+.headerAbout{
+    margin-top: 25px;
+    font-size: 21px;
+    color: white;
+}
+.AboutTextAdditional{
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+.AboutEntryText{
+    padding: 7px;
+    font-size: 18px;
+    color: black;
+}
+.underLineContainer{
+    display: flex;
+    justify-content: center;
+}
+.underLine{
+   width: 95%;
+   height: 5.6px;
+   margin-top: 7px;
+   background-color: black;
+}
+.mainBody{
+    display: grid;
+    margin-top: 3px;
+    height: 976px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.4fr 0.6fr;
+}
+.leftPart{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+.border{
+    border: 1px solid black;
+}
+.borderBlack{
+    border-left: 3px solid black;
+}
+.rightPart{
+    display: grid;
+    grid-template-rows: 0.27fr 0.9fr 0.3fr;
+    grid-template-columns: 1fr;
+}
+
+
+
+/*... Resume Section ...*/
+.aboutDiv{
+    display: grid;
+    grid-template-rows: 0.3fr 0.7fr;
+    grid-template-columns: 1fr;
+}
+.aboutHeaderDiv{
+    padding: 7px;
+}
+.aboutHeaderDivText{
+    font-size: 27px;
+}
+.underLineContainerAbout{
+    padding-left: 2px;
+   
+}
+.underLineAbt{
+    width: 83px;
+    background-color: black;
+    height: 4px;
+}
+.aboutDivText{
+    padding-left: 5px;
+    font-size: 18px;
+}
+.skillsDiv{
+    display: grid;
+    grid-template-rows: 0.5fr 1.25fr 0.75fr;
+    grid-template-columns: 1fr;
+}
+.containerBoxCert{
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.containerBoxCert li{
+    margin-top: 3px;
+    list-style: none;
+}
+.certificateDiv{
+    display: grid;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-columns: 1fr;
+
+}
+.AchievementsDiv{
+    display: grid;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-columns: 1fr;
+}
+.AchivementContainer{
+    margin-top: 15px;
+}
+.AchivementContainer li{
+    list-style: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.eduDiv{
+    display: grid;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-columns: 1fr;
+}
+.eduContainer{
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns: 1fr;
+}
+.eduInnerHeader{
+   
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+.eduInnerHeader{
+   padding-left: 13px; 
+}
+.navOpt{
+    background-color: rgb(148, 115, 5);
+    width: 100px;
+    margin-left: 10px;
+    height: 15px;
+}
+.projectsDiv{
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    grid-template-columns: 1fr;
+}
+.projectsContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+.projectClass{
+    display: grid;
+    grid-template-rows: 0.3fr 0.5fr 0.2fr;
+    grid-template-columns: 1fr;
+}
+.headerClass{
+ 
+    padding:10px;
+}
+.linkStyle{
+    text-decoration: none;
+    color: rgb(59, 59, 207);
+}
+.ProjectNameClass{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.DescrClassPrj {
+    padding: 10px;
+}
+.skillsBox{
+    margin-top: 15px;
+}
+.skillsEducation{
+      
+    display:grid;
+    grid-template-rows: 1fr 9fr;
+    grid-template-columns: 1fr;
+}
+.skillsEntryDiv{
+    display: grid;
+
+    grid-template-rows: 1fr 8fr;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+}
+
+.borderWhite{
+    border: 1px solid white;
+}
+
+.skillsBox3{
+    font-size: 17px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+.skillsBox{
+    font-size: 17px;
+    padding: 7px;
+    margin-left: 7px;
+}
+.EduFamSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.degEntry{
+    font-size: 19px;
+    padding: 7px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.projectNameLinks{
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.InpPrj1{
+    margin-left: 10px;
+}
+.borderBlack1{
+    border: 1px solid black;
+}
+.advanceSkillsDiv{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+.familiarSkillsDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
